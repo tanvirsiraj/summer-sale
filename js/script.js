@@ -1,3 +1,11 @@
+let totalPriceField = document.getElementById("total-price");
+let discountField = document.getElementById("discount");
+let subTotalField = document.getElementById("total");
+let makePurchaseBtn = document.getElementById("make-purchase");
+let applyBtn = document.getElementById("apply");
+let couponTextField = document.getElementById("coupon-field");
+let productListField = document.getElementById("product-list");
+
 function getTextFieldById(elementId) {
   const elementText = document.getElementById(elementId).innerText;
   return elementText;
@@ -5,21 +13,18 @@ function getTextFieldById(elementId) {
 
 let total = 0;
 function setTotalPrice(price) {
-  const totalPriceField = document.getElementById("total-price");
   total = total + price;
   totalPriceField.innerText = total.toFixed(2);
-  let discountField = document.getElementById("discount");
-  let subTotalField = document.getElementById("total");
 
   if (totalPriceField.innerText > 0) {
-    document.getElementById("make-purchase").removeAttribute("disabled");
+    makePurchaseBtn.removeAttribute("disabled");
   }
   if (totalPriceField.innerText >= 200) {
-    document.getElementById("apply").removeAttribute("disabled");
+    applyBtn.removeAttribute("disabled");
 
-    document.getElementById("apply").addEventListener("click", function () {
-      const couponTextField = document.getElementById("coupon-field").value;
-      if (couponTextField === "SELL200") {
+    applyBtn.addEventListener("click", function () {
+      const couponTextFieldValue = couponTextField.value;
+      if (couponTextFieldValue === "SELL200") {
         const totalPrice = parseFloat(totalPriceField.innerText);
         discountField.innerText = ((totalPrice * 20) / 100).toFixed(2);
         subTotalField.innerText = (
@@ -36,7 +41,6 @@ function setTotalPrice(price) {
 }
 
 function setProductNameToCart(name) {
-  const productListField = document.getElementById("product-list");
   const counter = productListField.childElementCount;
 
   //   <h2 class="text-xl font-[500] mb-2"></h2>;
@@ -46,13 +50,18 @@ function setProductNameToCart(name) {
   productListField.appendChild(h2);
 }
 
+function promoCodeBtn() {
+  couponTextField.value = "SELL200";
+}
+
 function goHome() {
-  document.getElementById("product-list").innerHTML = "";
-  document.getElementById("total-price").innerText = "0.00";
-  document.getElementById("discount").innerText = "0.00";
-  document.getElementById("total").innerText = "0.00";
-  document.getElementById("make-purchase").setAttribute("disabled", "");
-  document.getElementById("apply").setAttribute("disabled", "");
+  productListField.innerHTML = "";
+  totalPriceField.innerText = "0.00";
+  discountField.innerText = "0.00";
+  subTotalField.innerText = "0.00";
+  makePurchaseBtn.setAttribute("disabled", "");
+  applyBtn.setAttribute("disabled", "");
+  couponTextField.value = "";
 }
 
 document.getElementById("product1").addEventListener("click", function (event) {
