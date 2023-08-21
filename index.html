@@ -59,7 +59,7 @@
         <div class="flex-1">
           <h2 class="text-4xl font-[600] mb-8">Kitchenware</h2>
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div onclick="product()" class="bg-[#fff] p-6 rounded-lg">
+            <div id="product1" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
               <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
                 <img src="./images/prod1.png" alt="Shoes" />
               </div>
@@ -71,11 +71,15 @@
                   <i class="fa-regular fa-star text-[#FFC107]"></i>
                   <i class="fa-regular fa-star text-[#FFC107]"></i>
                 </div>
-                <h2 class="text-xl font-[600] my-2">K. Accessories</h2>
-                <p class="text-[#11111180] text-xl"><span>39.00</span> TK</p>
+                <h2 class="text-xl font-[600] my-2" id="product1-name">
+                  K. Accessories
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product1-price">39.00</span> TK
+                </p>
               </div>
             </div>
-            <div onclick="product()" class="bg-[#fff] p-6 rounded-lg">
+            <div id="product2" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
               <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
                 <img src="./images/prod2.png" alt="Shoes" />
               </div>
@@ -87,11 +91,15 @@
                   <i class="fa-regular fa-star text-[#FFC107]"></i>
                   <i class="fa-regular fa-star text-[#FFC107]"></i>
                 </div>
-                <h2 class="text-xl font-[600] my-2">K. Accessories</h2>
-                <p class="text-[#11111180] text-xl"><span>25.00</span> TK</p>
+                <h2 class="text-xl font-[600] my-2" id="product2-name">
+                  K. Accessories
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product2-price">25.00</span> TK
+                </p>
               </div>
             </div>
-            <div onclick="product()" class="bg-[#fff] p-6 rounded-lg">
+            <div id="product3" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
               <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
                 <img src="./images/prod3.png" alt="Shoes" />
               </div>
@@ -104,14 +112,18 @@
 
                   <i class="fa-regular fa-star text-[#FFC107]"></i>
                 </div>
-                <h2 class="text-xl font-[600] my-2">Home Cooker</h2>
-                <p class="text-[#11111180] text-xl"><span>49.00</span> TK</p>
+                <h2 class="text-xl font-[600] my-2" id="product3-name">
+                  Home Cooker
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product3-price">49.00</span> TK
+                </p>
               </div>
             </div>
           </div>
           <h2 class="text-4xl font-[600] mb-8 mt-14">Sportswear</h2>
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div onclick="product()" class="bg-[#fff] p-6 rounded-lg">
+            <div id="product4" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
               <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
                 <img src="./images/prod4.png" alt="Shoes" />
               </div>
@@ -123,11 +135,15 @@
                   <i class="fa-regular fa-star text-[#FFC107]"></i>
                   <i class="fa-regular fa-star text-[#FFC107]"></i>
                 </div>
-                <h2 class="text-xl font-[600] my-2">Sports Back Cap</h2>
-                <p class="text-[#11111180] text-xl"><span>49.00</span> TK</p>
+                <h2 class="text-xl font-[600] my-2" id="product4-name">
+                  Sports Back Cap
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product4-price">49.00</span> TK
+                </p>
               </div>
             </div>
-            <div onclick="product()" class="bg-[#fff] p-6 rounded-lg">
+            <div id="product5" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
               <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
                 <img src="./images/prod5.png" alt="Shoes" />
               </div>
@@ -140,11 +156,15 @@
 
                   <i class="fa-regular fa-star text-[#FFC107]"></i>
                 </div>
-                <h2 class="text-xl font-[600] my-2">Full Jersey Set</h2>
-                <p class="text-[#11111180] text-xl"><span>69.00</span> TK</p>
+                <h2 class="text-xl font-[600] my-2" id="product5-name">
+                  Full Jersey Set
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product5-price">69.00</span> TK
+                </p>
               </div>
             </div>
-            <div onclick="product()" class="bg-[#fff] p-6 rounded-lg">
+            <div id="product6" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
               <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
                 <img src="./images/prod6.png" alt="Shoes" />
               </div>
@@ -157,14 +177,18 @@
                   <i class="fa-regular fa-star text-[#FFC107]"></i>
                   <i class="fa-regular fa-star text-[#FFC107]"></i>
                 </div>
-                <h2 class="text-xl font-[600] my-2">Sports cates</h2>
-                <p class="text-[#11111180] text-xl"><span>159.00</span> TK</p>
+                <h2 class="text-xl font-[600] my-2" id="product6-name">
+                  Sports cates
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product6-price">159.00</span> TK
+                </p>
               </div>
             </div>
           </div>
           <h2 class="text-4xl font-[600] mb-8 mt-14">Furniture</h2>
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div onclick="product()" class="bg-[#fff] p-6 rounded-lg">
+            <div id="product7" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
               <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
                 <img src="./images/prod7.png" alt="Shoes" />
               </div>
@@ -177,11 +201,15 @@
 
                   <i class="fa-regular fa-star text-[#FFC107]"></i>
                 </div>
-                <h2 class="text-xl font-[600] my-2">Single Relax Chair</h2>
-                <p class="text-[#11111180] text-xl"><span>185.00</span> TK</p>
+                <h2 class="text-xl font-[600] my-2" id="product7-name">
+                  Single Relax Chair
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product7-price">185.00</span> TK
+                </p>
               </div>
             </div>
-            <div onclick="product()" class="bg-[#fff] p-6 rounded-lg">
+            <div id="product8" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
               <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
                 <img src="./images/prod8.png" alt="Shoes" />
               </div>
@@ -193,11 +221,15 @@
                   <i class="fa-solid fa-star text-[#FFC107]"></i>
                   <i class="fa-solid fa-star text-[#FFC107]"></i>
                 </div>
-                <h2 class="text-xl font-[600] my-2">Children play</h2>
-                <p class="text-[#11111180] text-xl"><span>299.00</span> TK</p>
+                <h2 class="text-xl font-[600] my-2" id="product8-name">
+                  Children play
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product8-price">299.00</span> TK
+                </p>
               </div>
             </div>
-            <div onclick="product()" class="bg-[#fff] p-6 rounded-lg">
+            <div id="product9" class="bg-[#fff] p-6 rounded-lg cursor-pointer">
               <div class="bg-[#1111110D] flex justify-center py-8 rounded-lg">
                 <img src="./images/prod9.png" alt="Shoes" />
               </div>
@@ -209,8 +241,12 @@
                   <i class="fa-solid fa-star text-[#FFC107]"></i>
                   <i class="fa-solid fa-star text-[#FFC107]"></i>
                 </div>
-                <h2 class="text-xl font-[600] my-2">Flexible Sofa</h2>
-                <p class="text-[#11111180] text-xl"><span>339.00</span> TK</p>
+                <h2 class="text-xl font-[600] my-2" id="product9-name">
+                  Flexible Sofa
+                </h2>
+                <p class="text-[#11111180] text-xl">
+                  <span id="product9-price">339.00</span> TK
+                </p>
               </div>
             </div>
           </div>
@@ -221,10 +257,12 @@
             <h2 class="text-2xl font-[500]">Have coupon?</h2>
             <div class="join mt-4">
               <input
+                id="coupon-field"
                 class="border rounded-l-lg join-item outline-0 text-[#11111166] ps-4"
                 placeholder="Coupon code"
               />
               <button
+                id="apply"
                 class="btn btn-secondary join-item rounded-r-lg text-white capitalize"
                 disabled
               >
@@ -234,6 +272,10 @@
           </div>
           <div class="bg-[#fff] p-6 rounded-lg mt-6">
             <div id="product-list"></div>
+            <div
+              class="my-6 conditional-border"
+              style="border-bottom: 1px solid #11111126"
+            ></div>
             <div>
               <h2 class="text-xl font-[500] mb-2">
                 Total price:
@@ -254,11 +296,37 @@
                 style="border-bottom: 1px solid #11111126"
               ></div>
               <button
+                onclick="my_modal_5.showModal()"
+                id="make-purchase"
                 class="btn btn-secondary w-full text-white text-xl"
                 disabled
               >
                 Make Purchase
               </button>
+              <!-- modal  -->
+              <!-- Open the modal using ID.showModal() method -->
+
+              <dialog
+                id="my_modal_5"
+                class="modal modal-bottom sm:modal-middle"
+              >
+                <form method="dialog" class="modal-box text-center">
+                  <img class="mx-auto" src="./images/congo.png" alt="" />
+                  <h3 class="font-bold text-4xl mt-10 mb-4">Congratulations</h3>
+                  <p class="mb-10 text-[#11111180]">
+                    Your Purchase the product
+                  </p>
+                  <div class="text-center">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button
+                      onclick="goHome()"
+                      class="btn btn-secondary text-white"
+                    >
+                      Go Home
+                    </button>
+                  </div>
+                </form>
+              </dialog>
             </div>
           </div>
         </div>

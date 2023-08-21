@@ -3,3 +3,7 @@
 body {
   font-family: "Work Sans", sans-serif;
 }
+
+.border-bottom {
+  border-bottom: 1px solid #11111126;
+}
