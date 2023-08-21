@@ -56,6 +56,7 @@ function promoCodeBtn() {
 
 function goHome() {
   productListField.innerHTML = "";
+  total = 0;
   totalPriceField.innerText = "0.00";
   discountField.innerText = "0.00";
   subTotalField.innerText = "0.00";
